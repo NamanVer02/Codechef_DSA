@@ -2,15 +2,19 @@
 using namespace std;
 
 int main(){
-    int T, X, Y, K, N, C, P, result;
+    int T, X, Y, K, N, result;
     cin >> T;
 
     for (int i = 0; i < T; i++){
         cin >> X >> Y >> K >> N;
+        int P[N], C[N];
 
         for (int j = 0; j < N; j++){
-            cin >> P >> C;
-            if (P >= X-Y && C <= K){
+            cin >> P[j] >> C[j];
+        }
+
+        for (int j = 0; j < N; j++){
+            if (P[j] >= X-Y && C[j] <= K){
                 result = 1;
                 break;
             }
