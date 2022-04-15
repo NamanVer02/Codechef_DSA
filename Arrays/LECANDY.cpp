@@ -14,7 +14,7 @@ int main(){
             sum += temp;
         }
 
-        (sum <= C) ? cout << "YES\n" : cout << "NO\n";
+        (sum <= C) ? cout << "Yes\n" : cout << "No\n";
     }
     
     return 0;
