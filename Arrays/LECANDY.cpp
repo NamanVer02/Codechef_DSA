@@ -2,16 +2,17 @@
 using namespace std;
 
 int main(){
-    int T, N, C, temp, sum;
+    int T, N, C;
     cin >> T;
 
     for (int i = 0; i < T; i++){
         cin >> N >> C;
-        sum = 0;
+        int arr[N];
+        int sum = 0;
 
         for (int j = 0; j < N; j++){
-            cin >> temp;
-            sum += temp;
+            cin >> arr[j];
+            sum += arr[j];
         }
 
         (sum <= C) ? cout << "Yes\n" : cout << "No\n";
